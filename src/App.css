@@ -11,6 +11,11 @@ html, body, #root {
   width: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+html, body {
+  background-color: white;
+  color: white; /* opcional, para forzar también el texto */
+}
+
 
 /* Responsive - hasta 768px (tabletas y móviles) */
 @media (max-width: 768px) {
@@ -19,6 +24,12 @@ html, body, #root {
     text-align: center;
   }
 
+  @media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000;
+    color: white;
+  }
+}
   .hero-content {
     order: 2;
   }
