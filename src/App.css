@@ -11,62 +11,27 @@ html, body, #root {
   width: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-html, body {
+
+/* Estilo base del body */
+body {
+  margin: 0;
   background-color: white;
-  color: white; /* opcional, para forzar también el texto */
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Forzar fondo blanco en modo oscuro */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: white !important;
+    color: #333 !important;
+  }
 }
 
 
 /* Responsive - hasta 768px (tabletas y móviles) */
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-  }
 
-  @media (prefers-color-scheme: dark) {
-  body {
-    background-color: #000;
-    color: white;
-  }
-}
-  .hero-content {
-    order: 2;
-  }
-
-  .hero-image {
-    order: 1;
-    margin-bottom: 1rem;
-  }
-
-  .info-section {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .info-card {
-    margin: 0;
-  }
-
-  .nav {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .nav a,
-  .contact-btn {
-    margin: 0.25rem 0;
-  }
-
-  .hero-content h1 {
-    font-size: 2rem;
-  }
-
-  .about {
-    padding: 2rem 1rem;
-  }
-}
 
 /*//////////////////////////////////////////////*/
 /***********LOGO***************/
@@ -500,3 +465,15 @@ body {
 
 
 /**********************************************************/
+
+
+
+/***********Obscuridad****************/
+@media (prefers-color-scheme: dark) {
+  html, body {
+    background-color: white !important;
+    color: #333 !important;
+  }
+}
+
+/*******************************/
