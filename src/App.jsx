@@ -26,7 +26,7 @@ function App() {
           </div>
           <div className="hero-content">
             <h1>
-              Soluciones Médicas confiables <span>para tu bienestar.</span>
+              Soluciones Médicas confiables <br/><span> para tu <br/>bienestar.</span>
             </h1>
             <br />
             <h3>
@@ -51,20 +51,19 @@ function App() {
           <div className="info-card">
             <h3>Ventas</h3>
             <p>
-              Nuestro equipo altamente calificado está comprometido a satisfacer
-              las necesidades de nuestros clientes mediante un trato excepcional...
+              Nuestro equipo altamente calificado está comprometido a satisfacer las necesidades de nuestros clientes mediante un trato excepcional. Trabajamos de la mano con los clientes para ofrecer productos y servicios especializados de alta calidad.
             </p>
           </div>
           <div className="info-card">
             <h3>Gestión</h3>
             <p>
-              Control y manejo eficiente de los recursos materiales y supervisión contable...
+              Control y manejo eficiente de los recursos materiales y supervisión contable para alcanzar las metas establecidas de la empresa en colaboración con la dirección general y el área de ventas.
             </p>
           </div>
           <div className="info-card">
             <h3>Servicio</h3>
             <p>
-              Nuestro personal está listo para atender a nuestros clientes en cotizaciones...
+              Nuestro personal está listo para atender a nuestors clientes en cotizaciones, compras, ventas, etc. Garantizmos una atención personalizada y eficienta
             </p>
           </div>
         </section>
