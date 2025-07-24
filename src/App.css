@@ -22,7 +22,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 /* Responsive - hasta 768px (tabletas y móviles) */
 @media (max-width: 768px) {
   .hero {
