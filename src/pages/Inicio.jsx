@@ -1,7 +1,52 @@
 // src/App.jsx
 import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+
 
 function App() {
+      const clientes = [
+      {
+        nombre: 'Hospital General "Dr. Manuel Gea González".',
+        direccion: 'Calzada de Tlalpan 4800 Belisario Domínguez Sección XVI, Alcaldía Tlalpan 14080 Ciudad de México.',
+        contacto: 'Teléfono: 5540003000 ext. 7104 y 7100',
+        imagen: '/imagen1.jpeg'
+      },
+      {
+        nombre: 'Hospital General de Querétaro.',
+        direccion: 'Av. De los Moreles N° 20, esq. Av. Cañaveral 2do Piso, Col. El Carrizal, C.P 76030, Queretaro, Qro.',
+        contacto: 'Teléfono: 442 2154944 ext 25402 ',
+        imagen: '/imagen2.jpeg'
+      },
+      {
+        nombre: 'Hospital Regional Gral. Ignacio Zaragoza. ',
+        direccion: 'Calz. Ignacio Zaragoza 1711, Juan Escutia, Iztapalapa, Ciudad de México, CDMX.',
+        contacto: 'Teléfono: 5557165200 ext 16862',
+        imagen: '/imagen3.jpg'
+      },
+      {
+        nombre: 'Centro Medico Nacional “Manuel Avila Camacho”.',
+        direccion: 'Diagonal Defensores de la Republica Esquina 6 Poniente S/N Colonia Amor, Puebla, Puebla C.P. 72140. ',
+        contacto: 'Teléfono: (222) 2 49 30 99 Ext. 151',
+        imagen: '/imagen4.jpg'
+      },
+      {
+        nombre: 'Hospital Infantil de México “Federico Gómez”.',
+        direccion: 'Dr. Márquez No. 162, Col. Doctores, Alcaldía Cuauhtémoc; CDMX C.P 06720.',
+        contacto: 'Teléfonos: (52) 55 5228 9917 Ext. 2414',
+        imagen: '/imagen5.jpeg'
+      },
+    ];
+
+    const [indiceActual, setIndiceActual] = useState(0);
+
+    const handlePrev = () => {
+      setIndiceActual((prev) => (prev === 0 ? clientes.length - 1 : prev - 1));
+    };
+
+    const handleNext = () => {
+      setIndiceActual((prev) => (prev === clientes.length - 1 ? 0 : prev + 1));
+    };
+
   return (
     <>
       <div className="app-container">
@@ -72,6 +117,24 @@ function App() {
           </p>
         </div>
       </section>
+      <section className="white-spacer"></section>
+      <section className="clientes-section">
+        <h2 className="clientes-titulo">Nuestros <span>Clientes</span></h2>
+        <div className="clientes-contenedor">
+          <div className="cliente-imagen">
+            <button onClick={handlePrev} className="flecha-izq">←</button>
+            <img src={clientes[indiceActual].imagen} alt={`Cliente ${indiceActual + 1}`} />
+            <button onClick={handleNext} className="flecha-der">→</button>
+          </div>
+          <div className="cliente-info" key={indiceActual}>
+            <h3>{clientes[indiceActual].nombre}</h3>
+            <p><strong><span>Dirección:</span></strong> {clientes[indiceActual].direccion}</p>
+            <br/>
+            <p><strong><span>Contacto:</span></strong> {clientes[indiceActual].contacto}</p>
+          </div>
+        </div>
+      </section>
+
       <section className="white-spacer"></section>
         <div className="quality-section">
           <div className="quality-background"></div>

@@ -216,6 +216,119 @@ html, body, #root {
   line-height: 1.6;
   color: #333;
 }
+/*********************************************/
+/***************Carrusel de imagenes**********/
+.clientes-section {
+  padding: 1rem 2rem;
+  background-color: white;
+  text-align: center;
+}
+
+.clientes-titulo {
+  font-size: 2.7rem;
+  color: rgb(0, 0, 0);
+  margin-bottom: 2.5rem;
+}
+
+.clientes-titulo span{
+  font-size: 2.7rem;
+  color: green;
+  margin-bottom: 2.5rem;
+}
+
+
+.clientes-contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.cliente-imagen {
+  position: relative;
+  width: 630px;
+  height: 400px;
+  transition: transform 0.4s ease;
+}
+
+.cliente-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.cliente-imagen img:hover {
+  transform: scale(1.03);
+}
+
+.flecha-izq,
+.flecha-der {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(255, 255, 255, 0.85);
+  border: none;
+  font-size: 2.2rem;
+  padding: 0.5rem 0.9rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.flecha-izq:hover,
+.flecha-der:hover {
+  background-color: #ff5722;
+  color: white;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.flecha-izq {
+  left: -25px;
+}
+
+.flecha-der {
+  right: -25px;
+}
+
+.cliente-info {
+  max-width: 500px;
+   height: 350px; 
+  text-align: left;
+  font-size: 1.1rem;
+  color: #444;
+  padding: 2rem; /* 🧱 Espaciado interno */
+  border: 1px solid #ccc; /* 🧱 Borde gris claro */
+  border-radius: 12px; /* 🔄 Bordes redondeados */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* 🎯 Sombra de negro translúcido */
+  background-color: #fff; /* 🧼 Fondo blanco para contraste */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.cliente-info h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #222;
+}
+
+.cliente-info p{
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.cliente-info p span{
+  color: #ff5722;
+  font-size: 1.4rem;
+}
+
+/*********************************************/
 
 /* ------------ QUALITY SECTION ------------ */
 .quality-background {
