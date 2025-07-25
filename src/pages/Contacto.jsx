@@ -1,10 +1,22 @@
-import React from "react";
 import "./Contacto.css";
+import React from "react";
+
 
 function Contacto() {
   return (
     <>
     <div className="contact-wrapper">
+      <div className="social-icons">
+      <a href="https://wa.me/5549104955" target="_blank" class="whatsapp">
+        <i className="fab fa-whatsapp"></i>
+      </a>
+      <a href="https://www.instagram.com/grupooltech" target="_blank" class="instagram">
+        <i className="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/OltechMexico" target="_blank" class="facebook">
+        <i className="fab fa-facebook-f"></i> 
+      </a>
+    </div>
       <div className="contact-left">
         <h4 className="contact-subtitle">Contáctanos</h4>
         <h2 className="contact-main-title">Atención al cliente.</h2>
@@ -14,11 +26,11 @@ function Contacto() {
         <div className="down-arrow">↓</div>
       </div>
 
-      <form className="contact-right contact-form">
+      <form className="contact-right">
         <div className="form-row">
           <div className="form-group">
             <label>Nombre</label>
-            <input type="text" placeholder="Ingresa tu nombre" />
+            <input type="text" placeholder="Ingresa tu nombre"/>
           </div>
           <div className="form-group">
             <label>Asunto</label>
