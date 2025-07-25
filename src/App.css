@@ -311,6 +311,7 @@ html, body, #root {
 }
 
 
+
 .cliente-info h3 {
   text-align: center;
   margin-bottom: 1rem;
@@ -327,6 +328,22 @@ html, body, #root {
   color: #ff5722;
   font-size: 1.4rem;
 }
+@media (max-width: 768px) {
+  .cliente-info {
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .cliente-info h3 {
+    font-size: 1.6rem;
+  }
+
+  .cliente-info p {
+    font-size: 0.95rem;
+  }
+}
+
 
 /*********************************************/
 
