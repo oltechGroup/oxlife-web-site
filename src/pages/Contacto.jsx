@@ -26,24 +26,25 @@ function Contacto() {
         <div className="down-arrow">↓</div>
       </div>
 
-      <form className="contact-right">
+      <form action="https://formsubmit.co/ddiegvan.09@gmail.com" method="POST" className="contact-right">
+      <input type="hidden" name="_captcha" value="false" />
         <div className="form-row">
           <div className="form-group">
             <label>Nombre</label>
-            <input type="text" placeholder="Ingresa tu nombre"/>
+            <input type="text" placeholder="Ingresa tu nombre" required/>
           </div>
           <div className="form-group">
             <label>Asunto</label>
-            <input type="text" placeholder="Ingresa el asunto" />
+            <input type="text" placeholder="Ingresa el asunto" required/>
           </div>
         </div>
         <div className="form-group">
           <label>Teléfono o correo</label>
-          <input type="text" placeholder="Escribe un correo o teléfono..." />
+          <input type="text" placeholder="Escribe un correo o teléfono..." required/>
         </div>
         <div className="form-group">
           <label>Mensaje</label>
-          <textarea rows="4" placeholder="Escribe algún mensaje..."></textarea>
+          <textarea rows="4" placeholder="Escribe algún mensaje..." required></textarea>
         </div>
         <button className="submit-btn" type="submit">Enviar Formulario</button>
       </form>
