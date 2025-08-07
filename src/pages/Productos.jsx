@@ -65,7 +65,7 @@ function Productos() {
               de calidad y documentación regulatoria necesaria para garantizar la calidad en la
               atención médica
               Algunas
-              de nuestras marcas son las siguientes  
+              de nuestras marcas son las siguientes:
             </p>
           </div>
         </div>
