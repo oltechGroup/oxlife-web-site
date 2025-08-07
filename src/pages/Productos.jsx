@@ -98,7 +98,7 @@ function Productos() {
             <div className="banner-overlay2">
               <div className="skew-box">
                 <h1>Nuestros <br /> Productos</h1>
-                <a className="btn-ver-productos" href="">Ver Productos</a>
+                <a className="btn-ver-productos" href="/src/pages/Productos.jsx">Ver Productos</a>
               </div>
             </div>
           </div>
