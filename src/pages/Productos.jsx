@@ -7,22 +7,22 @@ function Productos() {
     {
       nombre: "Insumos Médicos",
       descripcion: "Suministro de material quirúrgico, material de curación, soluciones y medicamentos con registro COFEPRIS.",
-      imagen: "/src/assets/material.png"
+      imagen: "/material.png"
     },
     {
       nombre: "Prótesis y Órtesis",
       descripcion: "Prótesis ortopédicas especializadas (rodilla, cadera, columna) y dispositivos de apoyo certificados.",
-      imagen: "/src/assets/Catálogo F1 (1).PNG"
+      imagen: "/Catálogo F1 (1).png"
     },
     {
       nombre: "Equipo Médico",
       descripcion: "Venta y distribución de equipos como monitores, camas hospitalarias, esterilizadores, etc.",
-      imagen: "/src/assets/equipomedico.png"
+      imagen: "/equipomedico.png"
     },
     {
       nombre: "Servicios Especializados",
       descripcion: "Asesoría técnica, capacitación médica, instalación y mantenimiento de equipos.",
-      imagen: "/src/assets/servicios.jpeg"
+      imagen: "/servicio.jpg"
     }
   ];
 

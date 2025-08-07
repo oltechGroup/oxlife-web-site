@@ -70,7 +70,7 @@
   position: relative;
   margin-top: 4rem;
   height: 500px;
-  background-image: url('/src/assets/1.png'); /* Reemplaza con tu imagen */
+  background-image: url('/12.png'); /* Reemplaza con tu imagen */
   background-size: cover;
   background-position: center;
   animation: moverFondo 15s linear infinite;
