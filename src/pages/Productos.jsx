@@ -1,6 +1,6 @@
 // src/pages/Productos.jsx
 import React from 'react';
-import './productos.css';
+import './Productos.css';
 
 function Productos() {
   const productos = [
