@@ -8,7 +8,7 @@ function Navbar() {
         <img src={logo} alt="OXLIFE Logo" className="logo-img" />
         <nav className="nav">
           <Link to="/">Inicio</Link>
-          <Link to="/catalogo">Catálogo</Link>
+          <Link to="">Catálogo</Link>
           <Link to="/productos">Productos</Link>
           <Link to="/nosotros">Nosotros</Link>
           <Link to="/contacto">

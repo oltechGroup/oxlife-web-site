@@ -7,7 +7,10 @@
 .productos-titulo {
   font-size: 3rem;
   margin-bottom: 3rem;
-  color: #028a0f;
+  color: #000000;
+}
+.highlight{
+    color: #ff5722;
 }
 
 .intro-productos {
@@ -119,6 +122,221 @@
   font-size: 1.1rem;
   color: #444;
 }
+
+.marcas-section {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #ffffff;
+}
+
+.logos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.logo-circle {
+  width: 140px;
+  height: 140px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.logo-circle:nth-child(even) {
+  top: 28px;
+}
+
+.logo-circle:nth-child(odd) {
+  top: -20px;
+}
+
+.logo-circle img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.logo-circle:hover {
+  transform: scale(1.05);
+}
+
+.marcas-titulo {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 1rem 0 2rem;
+}
+
+.marcas-descripcion {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #555;
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.letra-y {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  color: #000;
+}
+
+
+
+/* Zig-zag efecto en pantallas grandes */
+.logo-circle:nth-child(even) {
+  top: 20px;
+}
+
+.logo-circle:nth-child(odd) {
+  top: -20px;
+}
+
+.productos-banner2 {
+  position: relative;
+  height: 350px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.banner-background2 {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #3c68ba, #4684ef, #a65be9);
+  background-size: 200% 200%;
+  animation: gradientAnim 10s ease infinite;
+  z-index: 1;
+}
+
+.banner-overlay2 {
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* 🔺 Recuadro blanco inclinado */
+.skew-box {
+  background-color: white;
+  padding: 2rem 3rem;
+  transform: skewY(-6deg);
+  display: inline-block;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.skew-box h1 {
+  transform: skewY(6deg); /* Reverso para enderezar el texto */
+  font-size: 2.8rem;
+  color: #1e3c72;
+  margin-bottom: 1rem;
+}
+
+.btn-ver-productos {
+  transform: skewY(6deg); /* Reverso igual que el texto */
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  background-color: #1e3c72;
+  color: white;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-ver-productos:hover {
+  background-color: #163566;
+  transform: skewY(6deg) scale(1.05);
+}
+
+/* Fondo animado */
+@keyframes gradientAnim {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skew-box {
+    padding: 1.5rem 2rem;
+  }
+
+  .skew-box h1 {
+    font-size: 2rem;
+  }
+
+  .btn-ver-productos {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
+
+/* Animación de fondo */
+@keyframes gradientAnim {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .banner-overlay2 h1 {
+    font-size: 2.2rem;
+  }
+
+  .btn-ver-productos {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+
+/* 📱 Responsivo: quitar zig-zag en pantallas chicas */
+@media (max-width: 768px) {
+  .logo-circle {
+    top: 0 !important;
+  }
+
+  .logos-container {
+    gap: 1rem;
+    flex-wrap: wrap;
+    row-gap: 1.5rem;
+  }
+
+  .logo-circle {
+    width: 90px;
+    height: 90px;
+    padding: 0.5rem;
+  }
+}
+
 
 @keyframes moverFondo {
   0% {

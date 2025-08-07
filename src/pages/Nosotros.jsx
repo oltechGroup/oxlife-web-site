@@ -5,7 +5,7 @@ import './Nosotros.css';
 function Nosotros() {
   return (
     <section className="nosotros-section">
-      <h1 className="nosotros-titulo">Sobre Nosotros</h1>
+      <h1 className="nosotros-titulo">Nuestra <span className="highlight">Identidad.</span></h1>
 
       <div className="nosotros-bloque">
         <img src="/misison.png" alt="Misión" className="nosotros-imagen" />

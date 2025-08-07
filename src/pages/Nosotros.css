@@ -5,6 +5,10 @@
   align-items: center;
 }
 
+.highlight{
+    color: #ff5722;
+}
+
 .nosotros-titulo {
   font-size: 3rem;
   text-align: center;
@@ -35,7 +39,7 @@
 
 .nosotros-titulo {
   font-size: 3rem;
-  color: #028a0f;
+  color: #000000;
   margin-bottom: 3rem;
 }
 

@@ -24,12 +24,15 @@ function Productos() {
       descripcion: "Asesoría técnica, capacitación médica, instalación y mantenimiento de equipos.",
       imagen: "/servicio.jpg"
     }
+
+    
   ];
+  
 
   return (
     <>
       <section className="productos-section">
-        <h2 className="productos-titulo">Productos y Servicios</h2>
+        <h2 className="productos-titulo">Productos y <span className="highlight">Servicios</span></h2>
 
         {/* 🔽 Texto introductorio */}
         <div className="intro-productos">
@@ -69,6 +72,40 @@ function Productos() {
             </p>
           </div>
         </div>
+        {/* Sección de marcas */}
+        <section className="marcas-section">
+          <h2 className="marcas-titulo">Nuestras <strong>Marcas</strong></h2>
+          <div className="logos-container">
+            <div className="logo-circle"><img src="/marca10.jpg" alt="SKKYD" /></div>
+            <div className="logo-circle"><img src="/marca3.png" alt="Arthrex" /></div>
+            <div className="logo-circle"><img src="/marca1.png" alt="3M" /></div>
+            <div className="logo-circle"><img src="/marca2.png" alt="Aroba Ingeniería" /></div>
+            <div className="logo-circle"><img src="/marca6.png" alt="Coloplast" /></div>
+            <div className="logo-circle"><img src="/marca7.png" alt="BARD" /></div>
+            <div className="logo-circle"><img src="/marca8.png" alt="Uniseal" /></div>
+            <div className="logo-circle"><img src="/marca4.png" alt="Sell" /></div>
+          </div>
+          <p className="marcas-descripcion">
+            <br />
+            En un campo donde la precisión es crucial, elegir al proveedor <br />
+            adecuado puede marcar la diferencia entre el éxito y la<br />
+           conformidad.
+          </p>
+          <div className="letra-y">Y</div>
+          <br />
+          <div className="productos-banner2">
+            <div className="banner-background2"></div>
+            <div className="banner-overlay2">
+              <div className="skew-box">
+                <h1>Nuestros <br /> Productos</h1>
+                <a className="btn-ver-productos" href="">Ver Productos</a>
+              </div>
+            </div>
+          </div>
+
+
+        </section>
+
       </section>
       <br /><br />
       {/* 👣 Footer */}
