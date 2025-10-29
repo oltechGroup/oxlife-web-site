@@ -55,7 +55,7 @@ function App() {
         <section className="hero">
           <div className="orange-line"></div>
           <div className="hero-image">
-            <img src="/medicos.png" alt="Médicos" />
+            <img src="/medicos1.png" alt="Médicos" />
           </div>
           <div className="hero-content">
             <h1>
