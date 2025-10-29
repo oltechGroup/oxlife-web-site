@@ -99,7 +99,6 @@ function Productos() {
               <div className="skew-box">
                 <h1>Nuestros <br /> Productos</h1>
                 <button className="btn-ver-productos" disabled>Ver Productos</button>
-
               </div>
             </div>
           </div>
