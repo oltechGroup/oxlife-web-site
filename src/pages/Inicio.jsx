@@ -62,7 +62,6 @@ function Inicio() {
     <>
     <div className="fixed inset-0 -z-10">
       <div className="absolute w-[500px] h-[500px] bg-orange-300/30 rounded-full blur-3xl bottom-0 left-0"></div>
-      
       <div className="absolute w-[400px] h-[400px] bg-blue-200/30 rounded-full blur-3xl top-0 right-0"></div>
     </div>
       <div className="app-container">
@@ -77,6 +76,10 @@ function Inicio() {
               src="/medicos1.png" 
               alt="Médicos"
               className="relative z-10 w-[350px] md:w-[400px] object-cover"
+              style={{
+                WebkitMaskImage: 'linear-gradient(#fff 75%, transparent)',
+                maskImage: 'linear-gradient(#fff 80%, transparent)'
+              }}
             />
           </div>
           {/* Lado texto */}
@@ -208,6 +211,105 @@ function Inicio() {
           </div>
         </div>
       </section>
+      
+      {/* NUESTRA IDENTIDAD */}
+      <section className="py-10 px-6">
+        <div className="max-w-6xl mx-auto text-center">
+
+          {/* Título */}
+          <h2 className="text-3xl md:text-4xl font-light text-gray-700">
+            Nuestra <span className="font-bold text-orange-600">Identidad.</span>
+          </h2>
+
+          {/* Grid */}
+          <div className="grid md:grid-cols-3 gap-10 mt-16">
+
+            {/* Misión */}
+            <div className="px-6 border-r last:border-r-0">
+              <h3 className="text-xl font-semibold text-gray-700 mb-8">Misión</h3>
+              <p className="text-gray-800 text-sm leading-relaxed text-base">
+                Creación de valor en todos los servicios del grupo que satisfaga las expectativas y necesidades de 
+                nuestros clientes y nuestro equipo humano, fundamentados en los principios de calidad, eficiencia y 
+                ética profesional. 
+              </p>
+            </div>
+
+            {/* Visión */}
+            <div className="px-6 border-r last:border-r-0">
+              <h3 className="text-xl font-semibold text-gray-700 mb-4">Visión</h3>
+              <p className="text-gray-800 text-sm leading-relaxed text-base">
+                Ser una empresa líder en los diversos servicios, distinguiéndose por ofrecer un servicio profesional de 
+                alta calidad superando las expectativas del cliente, de gran rentabilidad y sustentabilidad en el negocio, 
+                permitiendo el desarrollo profesional y personal de sus colaboradores, para así ofrecer una contribución 
+                positiva a la sociedad. 
+              </p>
+            </div>
+
+            {/* Valores */}
+            <div className="px-6">
+              <h3 className="text-xl font-semibold text-gray-700 mb-4">Valores</h3>
+              <p className="text-gray-800 text-sm leading-relaxed text-base">
+                •Liderazgo <br />
+                •Humildad <br />
+                •Seguridad <br />
+                • Innovación <br />
+                •Honestidad <br />
+                •Lealtad <br />
+                •Responsabilidad <br />
+                •Actitud de servicio <br />
+                •Respeto 
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+      {/* Nuestras Marcas*/}
+     <section className="py-16 px-6 overflow-hidden">
+      <div className="max-w-6xl mx-auto text-center">
+
+        {/* Título */}
+        <h2 className="text-3xl md:text-4xl font-light text-gray-700 mb-12">
+          Nuestras <span className="font-bold text-gray-800">Marcas</span>
+        </h2>
+
+        {/* Carrusel */}
+        <div className="relative w-full overflow-hidden">
+          
+          <div className="flex gap-16 animate-scroll">
+
+            {/* PRIMER SET */}
+            <img src="/marca1.png" className="h-12 object-contain" />
+            <img src="/marca2.png" className="h-12 object-contain" />
+            <img src="/marca3.png" className="h-12 object-contain" />
+            <img src="/marca4.png" className="h-12 object-contain" />
+            <img src="/marca5.png" className="h-12 object-contain" />
+            <img src="/marca6.png" className="h-12 object-contain" />
+            <img src="/marca7.png" className="h-12 object-contain" />
+            <img src="/marca8.png" className="h-12 object-contain" />
+            <img src="/marca9.png" className="h-12 object-contain" />
+            <img src="/marca10.png" className="h-12 object-contain" />
+
+            {/* DUPLICADO (CLAVE para loop infinito) */}
+            <img src="/marca1.png" className="h-12 object-contain" />
+            <img src="/marca2.png" className="h-12 object-contain" />
+            <img src="/marca3.png" className="h-12 object-contain" />
+            <img src="/marca4.png" className="h-12 object-contain" />
+            <img src="/marca5.png" className="h-12 object-contain" />
+            <img src="/marca6.png" className="h-12 object-contain" />
+            <img src="/marca7.png" className="h-12 object-contain" />
+            <img src="/marca8.png" className="h-12 object-contain" />
+            <img src="/marca9.png" className="h-12 object-contain" />
+            <img src="/marca10.png" className="h-12 object-contain" />
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
 
       {/* Politica de calidad*/}
       <section className="relative w-full min-h-screen">

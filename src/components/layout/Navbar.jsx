@@ -1,13 +1,10 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-
   return (
     <nav className="bg-white shadow-md fixed w-full top-0 left-0 z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        
         {/* Logo */}
         <Link to="/">
            <img 
@@ -16,7 +13,6 @@ export default function Navbar() {
             className="h-20 md:h-25 object-contain "
           />
         </Link>
-
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-9 text-gray-700 font-medium">
           <li>
@@ -35,7 +31,6 @@ export default function Navbar() {
             <Link to="/contacto"  className="bg-orange-500 text-white px-5 py-2 rounded-full shadow-md hover:bg-orange-600 hover:scale-105 transition-all duration-300 font-semibold">Contacto </Link>
           </li>
         </ul>
-
         {/* Mobile Button */}
         <button 
           onClick={() => setOpen(!open)}
@@ -44,7 +39,6 @@ export default function Navbar() {
           ☰
         </button>
       </div>
-
       {/* Mobile Menu */}
       {open && (
         <div className="md:hidden bg-white shadow-md px-6 py-4 space-y-4 text-gray-700 font-medium">
