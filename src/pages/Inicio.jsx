@@ -1,10 +1,9 @@
-// src/App.jsx
 import { Link } from 'react-router-dom';
 import React, { useState } from "react";
 import { useEffect } from "react";
 
 
-function App() {
+function Inicio() {
       const clientes = [
       {
         nombre: 'Hospital General "Dr. Manuel Gea González".',
@@ -297,7 +296,7 @@ function App() {
               name="mensaje"
               required
               rows="4"
-              placeholder=" "
+              placeholder=""
               className="peer w-full bg-transparent border-0 border-b border-white/60 text-white pt-6 pb-2 focus:outline-none resize-none focus:border-white"
             ></textarea>
             <label className="absolute left-0 top-6 text-white/70 transition-all duration-200 pointer-events-none
@@ -315,103 +314,8 @@ function App() {
         </form>
       </div>
     </section>
-    
-    
-    {/* FOOTER */}
-    <footer className="w-full bg-[#a63c14] text-white px-6 py-12">
-      {/* CONTENIDO */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
-        
-        {/* Columna 1 */}
-        <div>
-          <h3 className="font-bold mb-4">Acerca de nosotros</h3>
-          <ul className="space-y-2 text-white/80">
-            <li>
-              <Link to="/" className="block hover:text-white transition">
-                Inicio
-              </Link>
-            </li>
-            <li>
-              <Link to="/catalogo" className="block hover:text-white transition">
-                Catálogo
-              </Link>
-            </li>
-            <li>
-              <Link to="/nosotros" className="block hover:text-white transition">
-                Nuestra misión
-              </Link>
-            </li>
-            <li>
-              <Link to="/nosotros" className="block hover:text-white transition">
-                Acerca de
-              </Link>
-            </li>
-          </ul>
-        </div>
-          
-
-        {/* Columna 2 */}
-        <div>
-          <h3 className="font-bold mb-4">Información de Contacto</h3>
-          <ul className="space-y-2 text-white/80">
-            <li>
-              <a href="https://wa.me/5549104955" className="hover:text-white">
-                (+52) 55-4910-4955
-              </a>
-            </li>
-            <li>
-              <a href="mailto:info.oxlife@gmail.com" className="hover:text-white">
-                info.oxlife@gmail.com
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        {/* Columna 3 */}
-        <div>
-          <h3 className="font-bold mb-4">Catálogo de Productos</h3>
-          <ul className="space-y-2 text-white/80">
-            <li>Lima Corporate</li>
-            <li>3M</li>
-            <li>SKYYD</li>
-            <li>Uniseal</li>
-            <li>Arthrex</li>
-          </ul>
-        </div>
-
-        {/* Logo */}
-        <div className="flex items-center justify-center md:justify-end">
-          <img src="/logoBL.png" alt="OXLIFE logo" className="w-32 opacity-90" />
-        </div>
-
-      </div>
-
-      {/* BOTTOM */}
-      <div className="max-w-6xl mx-auto mt-10 pt-6 border-t border-white/30 flex flex-col md:flex-row items-center justify-between gap-4">
-        
-        {/* Redes */}
-        <div className="flex items-center gap-4">
-          <a href="https://www.instagram.com/grupooltech">
-            <img src="/instagram.png" alt="Instagram" className="w-7 hover:scale-110 transition"/>
-          </a>
-          <a href="https://www.facebook.com/OltechMexico">
-            <img src="/facebook.png" alt="Facebook" className="w-7 hover:scale-110 transition"/>
-          </a>
-        </div>
-
-        {/* Texto */}
-        <p className="text-sm text-white/70">
-          © OXLIFE 2025
-        </p>
-
-      </div>
-
-    </footer>
-     
     </>
   );
 }
-
-
-export default App;
+export default Inicio;
  

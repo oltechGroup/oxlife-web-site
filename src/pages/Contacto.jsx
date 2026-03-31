@@ -83,51 +83,6 @@ function Contacto() {
         </div>
       </div>
     </section>
-    <footer className="footer">
-          <div className="footer-container">
-            <div className="footer-column">
-              <h3>Acerca de nosotros</h3>
-              <ul>
-                <li>Inicio</li>
-                <li>Catálogo</li>
-                <li>Nuestra misión</li>
-                <li>Acerca de</li>
-              </ul>
-            </div>
-
-            <div className="footer-column">
-              <h3>Información de Contacto</h3>
-              <ul>
-                <a href="https://wa.me/5549104955"><li>(+52) 55-4910-4955</li></a>
-                <a href="mailto:info.oxlife@gmail.com"><li>info.oxlife@gmail.com</li></a>
-              </ul>
-            </div>
-
-            <div className="footer-column">
-              <h3>Catálogo de Productos</h3>
-              <ul>
-                <li>Lima Corporate</li>
-                <li>3M</li>
-                <li>SKYYD</li>
-                <li>Uniseal</li>
-                <li>Arthrex</li>
-              </ul>
-            </div>
-
-            <div className="footer-logo">
-              <img src="/logoBL.png" alt="OXLIFE logo" />
-            </div>
-          </div>
-
-          <div className="footer-bottom">
-            <div className="footer-social">
-              <a href="https://www.instagram.com/grupooltech"><img src="/instagram.png" alt="Instagram" /></a>
-              <a href="https://www.facebook.com/OltechMexico"><img src="/facebook.png" alt="Facebook" /></a>
-            </div>
-            <p>OXLIFE 2025</p>
-          </div>
-        </footer>
-
 </>
 
   );
