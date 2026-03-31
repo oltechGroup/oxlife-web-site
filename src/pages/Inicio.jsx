@@ -312,7 +312,7 @@ function Inicio() {
 
 
       {/* Politica de calidad*/}
-      <section className="relative w-full min-h-screen">
+      <section className="relative w-full py-20 md:min-h-screen">
         {/* Fondo */}
         <div className="absolute inset-0">
           <div 
@@ -322,7 +322,7 @@ function Inicio() {
           <div className="h-[20%] bg-orange-600"></div>
         </div>
         {/* Card */}
-        <div className="absolute left-1/2 top-[80%] -translate-x-1/2 -translate-y-1/2 w-full px-6">
+        <div className="relative md:absolute md:left-1/2 md:top-[80%] md:-translate-x-1/2 md:-translate-y-1/2 w-full px-6 mt-10 md:mt-0">
           <div className="bg-white rounded-2xl shadow-2xl p-10 max-w-2xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-light text-gray-700">
               Política de <br />
