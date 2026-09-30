@@ -45,10 +45,10 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto mt-6 flex flex-col md:flex-row items-center justify-between gap-6">
         {/* Redes */}
         <div className="flex gap-6 text-2xl text-white/80">
-          <a href="https://www.instagram.com/grupooltech" className="hover:text-white transition">
+          <a href="" className="hover:text-white transition">
             <FaInstagram />
           </a>
-          <a href="https://www.facebook.com/OltechMexico" className="hover:text-white transition">
+          <a href="" className="hover:text-white transition">
             <FaFacebookF />
           </a>
         </div>
